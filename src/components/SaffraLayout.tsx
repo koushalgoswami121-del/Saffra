@@ -146,12 +146,22 @@ export const Navbar = () => {
 
 export const Hero = () => {
   const [currentDish, setCurrentDish] = useState(0);
+  const [hasScrolled, setHasScrolled] = useState(false);
 
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentDish((prev) => (prev + 1) % dishes.length);
     }, 5000);
     return () => clearInterval(timer);
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setHasScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
@@ -266,16 +276,29 @@ export const Hero = () => {
         </div>
       </div>
       
-      <motion.div 
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.5, duration: 1 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
-        id="scroll-indicator"
-      >
-        <span className="text-[10px] uppercase tracking-[0.3em] opacity-40">Explore</span>
-        <div className="w-[1px] h-12 bg-gradient-to-b from-gold to-transparent" />
-      </motion.div>
+      <AnimatePresence>
+        {!hasScrolled && (
+          <motion.div 
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: [0.45, 1, 0.45], y: [0, 8, 0] }}
+            exit={{ opacity: 0, y: 12 }}
+            transition={{
+              opacity: { delay: 1.2, duration: 2.2, repeat: Infinity, ease: "easeInOut" },
+              y: { delay: 1.2, duration: 2.2, repeat: Infinity, ease: "easeInOut" },
+              exit: { duration: 0.25 }
+            }}
+            className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+            id="scroll-indicator"
+          >
+            <span className="text-[10px] uppercase tracking-[0.3em] opacity-60">Explore</span>
+            <motion.div
+              animate={{ scaleY: [1, 0.65, 1] }}
+              transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
+              className="w-[1px] h-12 bg-gradient-to-b from-gold to-transparent origin-top"
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 };
