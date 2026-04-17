@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Inter", sans-serif;
+  --color-green: #2d5a27;
+  --color-gold: #d4af37;
+  --color-champagne: #f5f2ed;
+  --color-charcoal: #1a1a1a;
+}
+
+@layer base {
+  body {
+    @apply bg-champagne text-charcoal font-sans antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+.serif-italic {
+  font-family: var(--font-serif);
+  font-style: italic;
+}
+
+.text-green {
+  color: var(--color-green);
+}
+
+.bg-green {
+  background-color: var(--color-green);
+}
+
+.border-green {
+  border-color: var(--color-green);
+}
+
+.bg-champagne {
+  background-color: var(--color-champagne);
+}
+
+.text-charcoal {
+  color: var(--color-charcoal);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-champagne;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-charcoal/20 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-green/50;
+}
