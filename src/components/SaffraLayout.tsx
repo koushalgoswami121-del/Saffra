@@ -273,7 +273,7 @@ export const Hero = () => {
         className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
         id="scroll-indicator"
       >
-        <span className="text-[10px] uppercase tracking-[0.3em] opacity-40">Scroll</span>
+        <span className="text-[10px] uppercase tracking-[0.3em] opacity-40">Explore</span>
         <div className="w-[1px] h-12 bg-gradient-to-b from-gold to-transparent" />
       </motion.div>
     </section>
