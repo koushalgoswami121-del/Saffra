@@ -211,16 +211,16 @@ export const Hero = () => {
             className="flex flex-wrap gap-4 justify-center md:justify-start"
           >
             <a 
-              href="#menu"
+              href="#reservation"
               className="bg-charcoal text-champagne px-6 md:px-8 py-3 md:py-4 text-[10px] md:text-xs uppercase tracking-widest hover:bg-green transition-colors duration-300 inline-block"
             >
-              View Menu
+              BOOK A TABLE
             </a>
             <a 
-              href="#reservation"
+              href="#menu"
               className="border border-charcoal px-6 md:px-8 py-3 md:py-4 text-[10px] md:text-xs uppercase tracking-widest hover:bg-green hover:border-green hover:text-champagne transition-all duration-300 inline-block"
             >
-              BOOK A TABLE
+              VIEW MENU
             </a>
           </motion.div>
         </div>
@@ -328,12 +328,12 @@ export const About = () => (
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.5, duration: 0.8 }}
-          className="absolute -bottom-10 -right-2 md:-bottom-8 md:-right-8 bg-champagne p-5 md:p-8 shadow-xl max-w-[180px] sm:max-w-[240px] md:max-w-xs"
+          className="absolute -bottom-5 -right-2 md:-bottom-6 md:-right-6 bg-champagne p-3 sm:p-4 md:p-5 shadow-xl max-w-[150px] sm:max-w-[190px] md:max-w-[220px]"
         >
-          <p className="font-serif italic text-lg md:text-xl text-charcoal/80">
+          <p className="font-serif italic text-sm sm:text-base md:text-lg leading-snug text-charcoal/80">
             "Cooking is an art, but dining is a ritual. We honor both at Saffra."
           </p>
-          <p className="mt-4 text-[10px] uppercase tracking-widest font-bold">— Chef Julian Saffra</p>
+          <p className="mt-2 sm:mt-3 text-[9px] md:text-[10px] uppercase tracking-[0.18em] font-bold">— Chef Julian Saffra</p>
         </motion.div>
       </div>
       <div id="about-text">
