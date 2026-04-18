@@ -337,13 +337,13 @@ export const About = () => (
         </motion.div>
       </div>
       <div id="about-text">
-        <span className="text-green uppercase tracking-[0.4em] text-xs font-semibold mb-4 block">Our Philosophy</span>
-        <h2 className="text-4xl md:text-5xl font-serif mb-8 leading-tight">A Symphony of Flavors and Elegance</h2>
+        <span className="text-green uppercase tracking-[0.4em] text-xs font-semibold mb-4 block">Our Story</span>
+        <h2 className="text-4xl md:text-5xl font-serif mb-8 leading-tight">Honest Ingredients, Unforgettable Flavors</h2>
         <p className="text-charcoal/70 mb-6 leading-relaxed">
-          Founded in 1994, Saffra has been at the forefront of culinary innovation. We believe that every ingredient has a story to tell, and our mission is to translate those stories into unforgettable dining experiences.
+          We’ve been doing what we love since 1994: turning fresh, local ingredients into meals you won’t forget.
         </p>
         <p className="text-charcoal/70 mb-8 leading-relaxed">
-          Our kitchen is a laboratory of taste, where traditional techniques meet modern gastronomy. We source exclusively from local organic farms and sustainable fisheries to ensure the highest quality in every bite.
+          We keep things simple by sourcing exclusively from organic farms. It’s not just dinner; it’s our way of sharing the best of the season with you.
         </p>
         <div className="grid grid-cols-2 gap-8" id="about-stats">
           <motion.div
