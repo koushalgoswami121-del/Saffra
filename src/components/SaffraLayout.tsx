@@ -6,7 +6,7 @@ const dishes = [
   {
     id: 1,
     name: "Heirloom Salad",
-    description: "Freshly harvested seasonal greens and a citrus-saffron vinaigrette.",
+    description: "Seasonal greens with citrus-saffron vinaigrette.",
     image: "https://res.cloudinary.com/dlc8ltxwz/image/upload/q_auto/f_auto/v1776325730/Gemini_Generated_Image_taps18taps18taps_w0uzjd.png"
   },
   {
@@ -18,13 +18,13 @@ const dishes = [
   {
     id: 2,
     name: "Truffle Risotto",
-    description: "Creamy Arborio rice with wild forest mushrooms and aged Parmigiano-Reggiano.",
+    description: "Creamy Arborio rice with wild mushrooms and parmesan.",
     image: "https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&q=80&w=800"
   },
   {
     id: 3,
     name: "Rice & Lentils ",
-    description: "a classic, comforting, and nutritious Indian vegetarian dish",
+    description: "a classic and nutritious Indian vegetarian dish",
     image: "https://res.cloudinary.com/dlc8ltxwz/image/upload/q_auto/f_auto/v1776298832/Gemini_Generated_Image_erbtiyerbtiyerbt_bpt57z.png"
   }
 ];
