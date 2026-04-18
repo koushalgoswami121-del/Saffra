@@ -652,7 +652,7 @@ export const Contact = () => (
           id="location"
         >
           <img 
-            src="https://res.cloudinary.com/dlc8ltxwz/image/upload/q_auto/f_auto/v1776343257/3a1a9e434a2cc6c9fb859242c5f9f66d_rchrke.jpg" 
+            src="https://res.cloudinary.com/dlc8ltxwz/image/upload/q_auto/f_auto/v1776533673/Screenshot_2026-04-18_230321_rojz6y.png" 
             alt="Map placeholder" 
             className="w-full h-full object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-1000"
             referrerPolicy="no-referrer"
