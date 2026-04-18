@@ -318,7 +318,7 @@ export const About = () => (
           whileInView={{ scale: 1, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1.5 }}
-          src="https://res.cloudinary.com/dlc8ltxwz/image/upload/q_auto/f_auto/v1776339892/1776339621941_1_d3dum0.png" 
+          src="https://res.cloudinary.com/dlc8ltxwz/image/upload/q_auto/f_auto/v1776534233/Gemini_Generated_Image_py18a6py18a6py18_w2vcet.png" 
           alt="Chef at work" 
           className="w-full h-[400px] md:h-[600px] object-cover rounded-sm grayscale hover:grayscale-0 transition-all duration-700"
           referrerPolicy="no-referrer"
