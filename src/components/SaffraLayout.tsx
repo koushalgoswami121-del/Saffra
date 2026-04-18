@@ -85,11 +85,11 @@ export const Navbar = () => {
 
         <div className="flex items-center gap-4">
           <a 
-            href="#reservation"
+            href="#location"
             className="hidden sm:block px-6 py-2 border border-charcoal/20 text-[10px] md:text-xs uppercase tracking-widest hover:bg-green hover:border-green hover:text-champagne transition-all duration-300" 
             id="nav-cta"
           >
-            Book a Table
+            LOCATION
           </a>
           
           {/* Mobile Menu Toggle */}
@@ -130,11 +130,11 @@ export const Navbar = () => {
                 </a>
               ))}
               <a 
-                href="#reservation"
+                href="#location"
                 className="mt-4 px-10 py-4 bg-green text-champagne text-xs uppercase tracking-[0.2em] font-bold"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Book a Table
+                LOCATION
               </a>
             </div>
           </motion.div>
@@ -217,10 +217,10 @@ export const Hero = () => {
               View Menu
             </a>
             <a 
-              href="#about"
+              href="#reservation"
               className="border border-charcoal px-6 md:px-8 py-3 md:py-4 text-[10px] md:text-xs uppercase tracking-widest hover:bg-green hover:border-green hover:text-champagne transition-all duration-300 inline-block"
             >
-              Our Story
+              BOOK A TABLE
             </a>
           </motion.div>
         </div>
@@ -649,6 +649,7 @@ export const Contact = () => (
           viewport={{ once: true }}
           transition={{ delay: 0.4, duration: 0.8 }}
           className="relative h-[350px] md:h-[500px] bg-champagne overflow-hidden group"
+          id="location"
         >
           <img 
             src="https://res.cloudinary.com/dlc8ltxwz/image/upload/q_auto/f_auto/v1776343257/3a1a9e434a2cc6c9fb859242c5f9f66d_rchrke.jpg" 
