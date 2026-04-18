@@ -18,7 +18,7 @@ const dishes = [
   {
     id: 2,
     name: "Truffle Risotto",
-    description: "Creamy Arborio rice with wild mushrooms and parmesan.",
+    description: "Creamy Arborio rice with wild mushrooms & parmesan.",
     image: "https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&q=80&w=800"
   },
   {
