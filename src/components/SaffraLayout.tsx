@@ -333,7 +333,7 @@ export const About = () => (
           <p className="font-serif italic text-sm sm:text-base md:text-lg leading-snug text-charcoal/80">
             "Cooking is an art, but dining is a ritual. We honor both at Saffra."
           </p>
-          <p className="mt-2 sm:mt-3 text-[9px] md:text-[10px] uppercase tracking-[0.18em] font-bold">— Chef Julian Saffra</p>
+          <p className="mt-2 sm:mt-3 text-[9px] md:text-[10px] uppercase tracking-[0.18em] font-bold">— Chef Juliana Saffra</p>
         </motion.div>
       </div>
       <div id="about-text">
